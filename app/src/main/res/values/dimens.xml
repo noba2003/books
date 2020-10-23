@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_card">@dimen/_120sdp</dimen>
+    <dimen name="heigt_card">@dimen/_65sdp</dimen>
+
+    <dimen name="heigt_img">@dimen/_60sdp</dimen>
+    <dimen name="width_img">@dimen/_50sdp</dimen>
+    <dimen name="font_big">@dimen/_6ssp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

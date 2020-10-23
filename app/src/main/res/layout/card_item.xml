@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/width_card"
+    android:layout_height="@dimen/heigt_card"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/width_card"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="#8BC34A"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/img_book"
+            android:layout_width="@dimen/width_img"
+            android:layout_height="@dimen/heigt_img"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/a" />
+
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_book"
+            android:gravity="center"
+            android:text="@string/where_the_crawdads"
+            android:textColor="#3F51B5"
+            android:textSize="@dimen/font_big"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/img_book" />
+
+        <TextView
+            android:id="@+id/author_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_title"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_toEndOf="@id/img_book"
+            android:gravity="center"
+            android:text="@string/delia_owens"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_big"
+            android:layout_toRightOf="@id/img_book" />
+
+        <TextView
+            android:id="@+id/book_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/author_book"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toEndOf="@id/img_book"
+            android:gravity="center"
+            android:text="@string/_2018"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_big"
+            android:layout_toRightOf="@id/img_book" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_year"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toEndOf="@id/img_book"
+            android:numStars="5"
+            android:theme="@style/RatingBar"
+            android:layout_toRightOf="@id/img_book" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
